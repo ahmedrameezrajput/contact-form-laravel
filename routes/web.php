@@ -26,29 +26,29 @@ Route::get('/', function () {
     ]);
 });
 
-// Route::get('/home', function () {
-//     return Inertia::render('RapidTask/Home');
-// });
-
-// Route::get('/services', function () {
-//     return Inertia::render('RapidTask/Services');
-// });
-
-// Route::get('/about', function () {
-//     return Inertia::render('RapidTask/About');
-// });
-
 Route::get('/', function () {
-    return view('home');
-});
-
-Route::get('/about', function () {
-    return view('about');
+    return Inertia::render('RapidTask/Home');
 });
 
 Route::get('/services', function () {
-    return view('services');
+    return Inertia::render('RapidTask/Services');
 });
+
+Route::get('/about', function () {
+    return Inertia::render('RapidTask/About');
+});
+
+// Route::get('/', function () {
+//     return view('home');
+// });
+
+// Route::get('/about', function () {
+//     return view('about');
+// });
+
+// Route::get('/services', function () {
+//     return view('services');
+// });
 
 Route::get('/contact', [ContactController::class, 'index']);
 Route::post('/contact', [ContactController::class, 'send']);

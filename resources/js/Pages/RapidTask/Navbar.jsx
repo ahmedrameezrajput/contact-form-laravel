@@ -9,28 +9,28 @@ function Navbar() {
                 >
                     <div class="space-x-12">
                         <a
-                            href="/Home"
+                            href="/"
                             class="text-sm font-semibold leading-6 text-[#251749] hover:font-medium hover:underline hover:text-orange-600"
                         >
                             Home
                         </a>
 
                         <a
-                            href="/About"
+                            href="/about"
                             class="text-sm font-semibold leading-6 text-[#251749] hover:font-medium hover:underline hover:text-orange-600"
                         >
                             About
                         </a>
 
                         <a
-                            href="/Services"
+                            href="/services"
                             class="text-sm font-semibold leading-6 text-[#251749] hover:font-medium hover:underline hover:text-orange-600"
                         >
                             Services
                         </a>
 
                         <a
-                            href="/Contact"
+                            href="/contact"
                             class="text-sm font-semibold leading-6 text-[#251749] hover:font-medium hover:underline hover:text-orange-600"
                         >
                             Contact

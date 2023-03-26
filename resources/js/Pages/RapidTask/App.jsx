@@ -9,16 +9,14 @@ import Home from "./Home";
 function App() {
     return (
         <div>
-            {/* <BrowserRouter>
+            <BrowserRouter>
                 <Routes>
-                    <Route index element={<Home />} />
-                    <Route exact path="/home" element={<Home />} />
+                    <Route path="/" element={<Home />} />
                     <Route path="services" element={<Services />} />
                     <Route path="contact" element={<Contact />} />
                     <Route path="about" element={<About />} />
                 </Routes>
-            </BrowserRouter> */}
-            <Home />
+            </BrowserRouter>
         </div>
     );
 }
