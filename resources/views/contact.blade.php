@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite('resources/css/app.css')
-    <title>Contact Form Task</title>
+    <title>Contact Form</title>
 </head>
 
 <body>
@@ -67,7 +67,7 @@
                                 </label>
                             </div>
                         </div>
-                        <button type="submit" name="submit" class="mt-8 rounded-md bg-[#263159] px-10 py-2 text-[#FFFBEB] hover:bg-[#495579]">
+                        <button type="submit" name="submit" class="mt-8 rounded-md bg-[#251749] px-10 py-2 text-[#FFFBEB] hover:bg-[#263159]">
                             Send Message
                         </button>
                     </form>

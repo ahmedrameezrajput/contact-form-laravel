@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form id="update-form" action="{{ route('editContact', ['id' => $contact->id]) }}" method="POST" style="display: none;">
+    <form action="{{ route('editContact', ['id' => $contact->id]) }}" method="POST">
         @csrf
         @method('PUT')
         <div class="mb-4">
