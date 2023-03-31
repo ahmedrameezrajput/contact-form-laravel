@@ -1,5 +1,5 @@
-import Navbar from "./Navbar";
 import ContactForm from "./ContactForm"
+import Navbar from "./Navbar";
 
 function Contact() {
     return (

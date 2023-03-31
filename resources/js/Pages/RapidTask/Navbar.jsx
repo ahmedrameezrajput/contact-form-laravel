@@ -1,7 +1,8 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
+// import Link from "react-router-dom";
+
 function Navbar() {
     return (
-        <div class="">
+        <div>
             <header class="top-0 z-1000 sticky bg-[#FFFBEB]">
                 <nav
                     class="text-center justify-between p-6"
@@ -34,6 +35,13 @@ function Navbar() {
                             class="text-sm font-semibold leading-6 text-[#251749] hover:font-medium hover:underline hover:text-orange-600"
                         >
                             Contact
+                        </a>
+
+                        <a
+                            href="/database"
+                            class="text-sm font-semibold leading-6 text-[#251749] hover:font-medium hover:underline hover:text-orange-600"
+                        >
+                            Database
                         </a>
                     </div>
                 </nav>

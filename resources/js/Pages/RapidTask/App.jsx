@@ -5,6 +5,7 @@ import Services from "./Services";
 import Contact from "./Contact";
 import About from "./About";
 import Home from "./Home";
+import Database from "./Database";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                     <Route path="services" element={<Services />} />
                     <Route path="contact" element={<Contact />} />
                     <Route path="about" element={<About />} />
+                    <Route path="database" element={<Database />} />
                 </Routes>
             </BrowserRouter>
         </div>

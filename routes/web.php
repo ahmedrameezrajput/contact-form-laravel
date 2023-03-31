@@ -1,6 +1,6 @@
 <?php
-
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\DisplayContactController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -27,7 +27,7 @@ Route::get('/', function () {
 });
 
 Route::get('/', function () {
-    return Inertia::render('RapidTask/Home');
+    return Inertia::render('RapidTask/App');
 });
 
 Route::get('/services', function () {
@@ -38,20 +38,26 @@ Route::get('/about', function () {
     return Inertia::render('RapidTask/About');
 });
 
-// Route::get('/', function () {
-//     return view('home');
+Route::get('/database', function () {
+    return Inertia::render('RapidTask/Database');
+});
+
+// Route::get('/modal', function () {
+//     return view('confirmation');
 // });
 
-// Route::get('/about', function () {
-//     return view('about');
-// });
+Route::get('/contact',[ContactController::class, 'index']);
 
-// Route::get('/services', function () {
-//     return view('services');
-// });
-
-Route::get('/contact', [ContactController::class, 'index']);
 Route::post('/contact', [ContactController::class, 'send']);
+
+Route::get('/database', [DisplayContactController::class, 'index']);
+
+Route::delete('/contacts/{id}', [DisplayContactController::class, 'destroy'])->name('contacts.delete');
+
+Route::get('/contacts/{id}/edit', [DisplayContactController::class, 'edit']);
+Route::put('/contacts/{id}', [DisplayContactController::class,'update'])->name('editContact');
+
+
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
@@ -63,4 +69,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
