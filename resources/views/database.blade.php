@@ -86,7 +86,7 @@
                         </td>
                         <td class="whitespace-nowrap px-6 py-4">
                             <div class="inline-flex gap-4">
-                                <a href="{{ route('editContact', ['id' => $contact->id]) }}" class="hover:scale-105">
+                                <a href="{{ route('edit', ['id' => $contact->id]) }}" class="hover:scale-105">
                                     <svg data-src="https://api.macosicons.com/uploads/pencil_24px_ebf5e0938a.svg" id="pencil" class="icon-image icon-image-24" fill="none" height="24" width="24" xmlns="http://www.w3.org/2000/svg" data-attributes-set="fill,height,width,xmlns" data-rendered="true">
                                         <g stroke="currentColor" stroke-width="1.5">
                                             <path d="M16.364 4.136c.329-.329.493-.493.657-.603a2 2 0 0 1 2.222 0c.164.11.328.274.657.603.328.328.492.493.602.656a2 2 0 0 1 0 2.223c-.11.163-.274.328-.602.656L9.066 18.505c-.264.265-.397.397-.55.502-.154.105-.325.18-.667.33l-.92.405c-1.986.874-2.98 1.311-3.463.828-.484-.484-.047-1.477.827-3.464l.405-.92c.15-.342.226-.513.33-.666.106-.154.238-.286.503-.55L16.364 4.135z" stroke-linecap="round"></path>

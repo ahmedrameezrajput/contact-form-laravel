@@ -54,7 +54,7 @@ Route::get('/database', [DisplayContactController::class, 'index']);
 
 Route::delete('/contacts/{id}', [DisplayContactController::class, 'destroy'])->name('contacts.delete');
 
-Route::get('/contacts/{id}/edit', [DisplayContactController::class, 'edit']);
+Route::get('/contacts/{id}/edit', [DisplayContactController::class, 'edit'])->name('edit');
 Route::put('/contacts/{id}', [DisplayContactController::class,'update'])->name('editContact');
 
 
