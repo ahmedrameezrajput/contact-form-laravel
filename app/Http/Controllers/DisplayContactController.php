@@ -19,6 +19,7 @@ class DisplayContactController extends Controller
     public function destroy($id)
     {
         DB::table('contacts')->where('id', $id)->delete();
+        //update
 
         if (DB::table('contacts')->count() === 0) {
             DB::table('contacts')->truncate();
