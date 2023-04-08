@@ -20,6 +20,7 @@ class DisplayContactController extends Controller
     {
         DB::table('contacts')->where('id', $id)->delete();
         //update
+        //now when i make changes i just need to go to the git extention tab, add a comment and commit
 
         if (DB::table('contacts')->count() === 0) {
             DB::table('contacts')->truncate();
